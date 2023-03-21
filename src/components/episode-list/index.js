@@ -31,7 +31,7 @@ const EpisodeList = () => {
                 <Card.Title>{episode.name}</Card.Title>
                 <Card.Text>
                   <Badge pill variant="info">
-                    Date: {episode.air_date}
+                    Data: {episode.air_date}
                   </Badge>
                 </Card.Text>
               </Card.Body>

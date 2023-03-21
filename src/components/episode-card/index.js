@@ -17,7 +17,7 @@ const EpisodeCard = ({ match }) => {
   }, [id]);
 
   if (!episode) {
-    return <div>Loading...</div>;
+    return <div>Carregando...</div>;
   }
 
   return (
@@ -27,10 +27,10 @@ const EpisodeCard = ({ match }) => {
           <Card.Title>{episode.name}</Card.Title>
           <Card.Text>
             <Badge pill variant="info">
-              Date: {episode.air_date}
+              Data: {episode.air_date}
             </Badge>
           </Card.Text>
-          <Card.Title>Characters</Card.Title>
+          <Card.Title>Personagens</Card.Title>
           <ul>
             {episode.characters.map((characters) => (
               <div>

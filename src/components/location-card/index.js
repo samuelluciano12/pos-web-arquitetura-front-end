@@ -17,7 +17,7 @@ const LocationCard = ({ match }) => {
   }, [id]);
 
   if (!location) {
-    return <div>Loading...</div>;
+    return <div>Carregando...</div>;
   }
 
   return (
@@ -27,13 +27,13 @@ const LocationCard = ({ match }) => {
           <Card.Title>{location.name}</Card.Title>
           <Card.Text>
             <Badge pill variant="info">
-              Type: {location.type}
+              Tipo: {location.type}
             </Badge>
             <Badge pill variant="info">
-              Dimension: {location.dimension}
+              Dimensão: {location.dimension}
             </Badge>
           </Card.Text>
-          <Card.Title>Residents</Card.Title>
+          <Card.Title>Residentes</Card.Title>
           <ul>
             {location.residents.map((residents) => (
               <div>

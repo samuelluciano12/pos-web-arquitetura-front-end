@@ -33,10 +33,10 @@ const LocationList = () => {
                 <Card.Title>{location.name}</Card.Title>
                 <Card.Text>
                   <Badge pill variant="info">
-                    Type: {location.type}
+                    Tipo: {location.type}
                   </Badge>{" "}
                   <Badge pill variant="secondary">
-                    Dimension: {location.dimension}
+                    Dimensão: {location.dimension}
                   </Badge>
                 </Card.Text>
               </Card.Body>

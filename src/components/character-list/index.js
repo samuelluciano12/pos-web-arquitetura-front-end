@@ -37,12 +37,12 @@ const CharacterList = () => {
                 <Card.Text>
                   <Badge>Status: {character.status}</Badge>
                   <br />
-                  <Badge>Species: {character.species}</Badge>
+                  <Badge>Especies: {character.species}</Badge>
                   <br />
-                  <Badge>Location: {character.location.name}</Badge>
+                  <Badge>Lugar: {character.location.name}</Badge>
                   <br />
                   <Link to={`/character/${character.id}`}>
-                    <Badge>Character Details</Badge>
+                    <Badge>Detalhes do personagem</Badge>
                   </Link>
                 </Card.Text>
               </Card.Body>

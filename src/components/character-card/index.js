@@ -17,7 +17,7 @@ const CharacterCard = ({ match }) => {
   }, [id]);
 
   if (!character) {
-    return <div>Loading...</div>;
+    return <div>Carregando...</div>;
   }
 
   return (
@@ -35,15 +35,15 @@ const CharacterCard = ({ match }) => {
               </Badge>
               <br />
               <Badge pill variant="secondary">
-                Species: {character.species}
+                Especies: {character.species}
               </Badge>
               <br />
               <Badge pill variant="info">
-                Origin: {character.origin.name}
+                Origem: {character.origin.name}
               </Badge>
               <br />
               <Badge pill variant="info">
-                Location: {character.location.name}
+                Lugar: {character.location.name}
               </Badge>
               <br />
               <Card.Title>Episodes </Card.Title>

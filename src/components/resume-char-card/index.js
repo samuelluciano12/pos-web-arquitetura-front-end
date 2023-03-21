@@ -16,7 +16,7 @@ const EpisodeCharacter = ({ id }) => {
   }, [id]);
 
   if (!character) {
-    return <div>Loading...</div>;
+    return <div>Carregando...</div>;
   }
 
   return (
@@ -28,7 +28,7 @@ const EpisodeCharacter = ({ id }) => {
             <Card.Title>{character.name}</Card.Title>
             <Card.Text>
               <Link to={`/character/${id}`}>
-                <Badge pill>Character Detail</Badge>
+                <Badge pill>Detalhes do personagem</Badge>
               </Link>
             </Card.Text>
           </Card.Body>
